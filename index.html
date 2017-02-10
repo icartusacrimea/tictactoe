@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Reenie+Beanie" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/tictactoe.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"</script>
+</head>
+
+<body>
+  <h1>Tic Tac Toe</h1>
+
+  <div id="board">
+
+    <div id="choose_players">
+      <div class="round-button-choice">
+        <div id="humans" class="button">
+          <div class="words">Human v. Human</div>
+        </div>
+      </div>
+      <div class="round-button-choice">
+        <div id="computer" class="button">
+          <div class="words">Human v. Computer</div>
+        </div>
+      </div>
+    </div>
+    <div id="XorO">
+      <div class="round-button-choice">
+        <div class="X button words" data-toggle="tooltip" title="You start.">
+          <div class="words2">X</div>
+        </div>
+      </div>
+      <div class="round-button-choice">
+        <div class="O button words" data-toggle="tooltip" title="Your opponent starts.">
+          <div class="words2">O</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="gameboard">
+    <div class="row">
+      <div id="one" class="one" data-idx="0">
+      </div>
+      <div id="two" class="two" data-idx="1">
+      </div>
+      <div id="three" class="three" data-idx="2">
+      </div>
+    </div>
+    <div class="row">
+      <div id="four" class="four" data-idx="3">
+      </div>
+      <div id="five" class="five" data-idx="4">
+      </div>
+      <div id="six" class="six" data-idx="5">
+      </div>
+    </div>
+    <div class="row">
+      <div id="seven" class="seven" data-idx="6">
+      </div>
+      <div id="eight" class="eight" data-idx="7">
+      </div>
+      <div id="nine" class="nine" data-idx="8">
+      </div>
+    </div>
+  </div>
+  <div class="score-reset">
+    <span class="player1">Player 1 Score: </span><span class="player1-score">0</span>
+    <span class="player2">Player 2 Score: </span><span class="player2-score">0</span>
+  </div>
+  <div id="reset" class="round-button">
+    <div class="round-button-circle"><a href="#" class="round-button">Reset</a></div>
+  </div>
+
+  <script type="text/javascript" src="js/tictactoe.js"></script>
+</body>
+</html>
